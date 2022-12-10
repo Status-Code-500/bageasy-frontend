@@ -1,13 +1,58 @@
 <!DOCTYPE html>
+
 <h1><b>Check-In Counter</b></h1>
+<input type = "file" value="Choose SIDECAN File" id = "keys" accept = "text/plain" onchange = "readFiles()"></input>
+<div id = "keyform"> </div>
 <script>
-    const blank = require('blank');
-    var encode = Crypto.randomUUID();
-    blank.writeFile('hash.sidecan', encode, (err) =>{if (err) throw err;});
+    function readFiles() {
+        let selectedFile = document.getElementById("keys").files[0];
+        let read = new FileReader();
+        read.addEventListener("loadend", () =>{document.getElementById("keyform").innerHTML = read.result;});
+        read.readAsText(selectedFile);
+    }
+    
+    readFiles();
 </script>
-<script> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <script>
+    
+    var encode = Crypto.randomUUID();
+    writeFile('hash.sidecan', encode, (err) =>{if (err) throw err;});
+</script> -->
+<!-- <script> 
     var set = true;
-    hashfile = fopen("hash.sidecan", 0);
+    var hashfile = fopen("hash.sidecan", 0);
     dat = fread(hashfile, 36);
     while (set == true) {
         var access = prompt('Enter the Access Key');
@@ -20,6 +65,6 @@
     
 
     document.body.innerHTML = "";
-</script>
+</script> -->
 
 
