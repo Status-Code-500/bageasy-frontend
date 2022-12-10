@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<h1><b>Check-In Counter</b></h1>
+<script type = "text/javascript" src = "Crypto.js"></script>
+<script> 
+    var set = true;
+    hashfile = fopen("hash.sidecan", 0);
+    dat = fread(hashfile, 36);
+    while (set == true) {
+        var access = prompt('Enter the Access Key');
+
+        if (access == dat) {
+            break;
+        }
+            
+    }
+    
+
+    document.body.innerHTML = "";
+</script>
+
+
