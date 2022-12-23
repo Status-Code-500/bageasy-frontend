@@ -1,0 +1,4 @@
+The Requirements to use this program are:
+- Python 3
+- A Browser that supports HTML dynamic JavaScript
+

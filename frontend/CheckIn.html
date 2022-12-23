@@ -8,9 +8,9 @@
         let selectedFile = document.getElementById("keys").files[0];
         let read = new FileReader();
         read.addEventListener("loadend", () =>{document.getElementById("keyform").innerHTML = read.result;});
-        read.readAsText(selectedFile);
+        hash = read.readAsText(selectedFile);
+        read.readAsText(selectedFile);        
     }
-    
     readFiles();
 </script>
 
@@ -43,7 +43,7 @@
 
 
 
-
+<!--Dead Code-->
 
 <!-- <script>
     
