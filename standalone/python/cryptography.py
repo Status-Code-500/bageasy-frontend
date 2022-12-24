@@ -13,5 +13,5 @@ def crypto():
         else:
             age = random.randint()
             hashed = "Age:" + str(random.randint(18, 117)) + "Height: " + str(random.randint(2, 84))
-        with open("hash2.sidecan-output", "a") as f:
+        with open("output.txt", "a") as f:
             f.append(hashed) 
